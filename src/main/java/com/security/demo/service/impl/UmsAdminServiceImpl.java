@@ -60,6 +60,7 @@ public class UmsAdminServiceImpl implements UmsAdminService{
 
     @Override
     public List<UmsPermission> getPermissionList(Integer adminId) {
+        System.out.println("try branch");
         return adminRoleRelationDao.getPermissionList(adminId);
     }
 }
